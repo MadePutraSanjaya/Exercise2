@@ -1,0 +1,68 @@
+.Judul{
+    color: azure;
+    box-shadow: 0 0 15px black;
+    border-bottom: 3px solid blue;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    border-top: 3px solid blue;
+    animation-name: babi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin: 50px;
+}
+body{
+    border-bottom: 5px solid goldenrod;
+   background-image: url(./math.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.apa{
+    color: aqua;
+    padding: 10px;
+    text-align: left;
+    margin-left: 300px;
+}
+.oh{
+    color: aqua;
+    padding: 10px;
+    text-align: left;
+    margin-left: 222px;
+}
+.nah{
+    color: aqua;
+    padding: 10px;
+    text-align: left;
+    margin-left: 312px;
+}
+.GG{
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 350px;
+}
+.bab{
+    color: goldenrod;
+    text-align: left;
+    margin-left: 252px;
+}
+@keyframes babi{
+    from{background-color: black;}
+    To{background-color: cornflowerblue;}
+
+    0%{
+        background-color: aquamarine;
+    }
+    25%{
+        background-color: red;
+    }
+    35%{
+        background-color: black;
+    }
+    45%{
+        background-color: rgb(68, 0, 68);
+    }
+    55%{
+        background-color: whitesmoke;
+    }
+}

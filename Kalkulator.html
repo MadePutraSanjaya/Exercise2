@@ -1,0 +1,51 @@
+<html>
+<head>
+    <h1 class="Judul"><em>Kalkulator</em></h1>
+<title>Kalkulator</title>
+<link rel="stylesheet" href="oke.css">
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+ 
+function hitung(){
+
+var myForm = document.form1;
+var x=eval(myForm.x.value);
+var y=eval(myForm.y.value);
+var pil= myForm.opt.value;
+if (pil == "Tambah") {
+var z = x + y;
+ }else if (pil == "Kurang") {
+var z = x - y;
+ }else if (pil == "Kali"){
+var z = x * y;
+ }else if (pil == "Bagi") {
+var z = x / y;
+ }
+myForm.hasil.value = z;
+myForm.x.value = "";
+myForm.y.value = "";
+}
+function resetForm(){
+document.form1.reset();
+}
+
+//-->
+
+</script>
+<div align="center">
+<form name="form1" action="#">
+<p class="apa"> Angka  <input type="text" name="x"/></p>
+<p class="oh">Ingin Dijumlahkan <input type="text" name="y" /></p>
+<p class="nah">Hasil  <input type="text" name="hasil" disabled="true" /></p>
+<p class="bab">Type Bilangan <select name="opt"></p>
+ <option value="Tambah"> + Tambah</option>
+ <option value="Kurang"> - Kurang</option>
+ <option value="Kali"> * Kali</option>
+ <option value="Bagi"> / Bagi</option>
+</select>
+<p class="GG"><input type="button" value="=" onClick="hitung()" /></p>
+<input type="button" value="HAPUS" onClick="resetForm()" />
+</form>
+</body>
+</html>
